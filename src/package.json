@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Mohsinkhan48.github.io/portfolio", 
+  "homepage": "https://Mohsinkhan48.github.io/my-portfolio", 
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@iconscout/react-unicons": "^2.0.2",
