@@ -20,7 +20,7 @@ const Testimonial = () => {
     {
       img: profilePic2,
       review:
-        "It was a great experience working with Mohsin khan. He was able to figure out my issues and correct them quickly. He would always go the extra mile and give me screenshots and detailed explanations on things he wanted me to understand or to do.",
+        "It was a great experience working with Mohsin khan. He was able to figure out my issues and correct them quickly. He would always go the extra mile and give me screenshots and detailed explanations on things he wanted me to understand or to do. I am blown away by how helpful and courteous he was the entire time he was helping me.",
     },
     {
       img: profilePic3,
