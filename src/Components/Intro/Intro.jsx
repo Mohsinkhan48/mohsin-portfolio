@@ -25,14 +25,19 @@ function Intro() {
     <div className='i-name'>
     <span style={{color: darkMode? 'white': ''}}>Hy! I Am</span>
     <span>Mohsin Khan</span>
-    <span>Frontend Developer with high level of experience in web designing and development, producting the Quality work</span>
+    <span>Mohsin is here,
+Experienced React.js developer with a strong understanding of state management and modern front-end tools. Committed to delivering high-quality code and staying up-to-date with the latest trends. And proficient in UI frameworks like Bootstrap and Tailwind CSS for crafting modern web experiences.
+
+I currently work at BigEntities Company, where I play a key role in developing the company's online presence through website development.
+
+Feel free to reach out to me at <a href="mailto:kmohsinkhan482@gmail.com"><b>kmohsinkhan482@gmail.com</b> </a>or <a href="tel:03034789426"><b>03034789426</b></a>    to discuss potential collaborations or to learn more about my work.</span>
     </div>
     <button className='button i-button'>Hire me</button>
 
     <div className='i-icons'>
-    <img src={Github} alt=''/>
-    <img src={LinkedIn} alt=''/>
-    <img src={Instagram} alt=''/>
+    {/* <img src={Github} alt=''/> */}
+    <a href="https://www.linkedin.com/in/mohsin-khan-706604217/" target="_blank"><img src={LinkedIn} alt=''/></a>
+   <a href="https://www.instagram.com/desi__lad/" target="_blank" > <img src={Instagram} alt=''/></a>
     </div>
     </div>
     <div className='i-right'>

@@ -15,6 +15,7 @@ const Footer = () => {
           <Insta color="white" size={"3rem"} />
           <Facebook color="white" size={"3rem"} />
           <Gitub color="white" size={"3rem"} />
+          
         </div>
       </div>
     </div>
