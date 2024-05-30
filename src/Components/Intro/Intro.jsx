@@ -30,7 +30,7 @@ Experienced React.js developer with a strong understanding of state management a
 
 I currently work at BigEntities Company, where I play a key role in developing the company's online presence through website development.
 
-Feel free to reach out to me at <a href="mailto:kmohsinkhan482@gmail.com"><b>kmohsinkhan482@gmail.com</b> </a>or <a href="tel:03034789426"><b>03034789426</b></a>    to discuss potential collaborations or to learn more about my work.</span>
+ </span>
     </div>
     <button className='button i-button'>Hire me</button>
 

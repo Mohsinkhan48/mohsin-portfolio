@@ -2,10 +2,10 @@ import React from 'react'
 import './Portfolio.css';
 import{Swiper, SwiperSlide} from 'swiper/react'
 import "swiper/css";
-import Sidebar from "../../img/sidebar.jpeg";
-import Ecommerce from "../../img/ecommerce.png";
+import Sidebar from "../../img/bigentities project.png";
+import Ecommerce from "../../img/fieldforce-project.png";
 import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import MusicApp from "../../img/desires-project.png";
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 

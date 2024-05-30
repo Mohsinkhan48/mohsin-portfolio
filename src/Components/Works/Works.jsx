@@ -24,13 +24,20 @@ function Works() {
           <spane>
           <b>I did work related to:</b>
           
+            <br /> <br />
+           <b> 1). BigEntities Website</b>
             <br />
-             ReactJS(CRUD App, Portfolio,Business and Ecommerce websites)
+             Technologies: HTML, CSS, Bootstrap, JavaScript
             <br />
-             Worked as a ReactJS developer for various renowned brands and clients
-            <br />
-             including Fiverr, Upwork, Freelancer.com and LinkedIn.
+            <b>Project Description</b> <br />
+            Developed and maintained the company’s main website, <br /> ensuring a responsive and user-friendly interface. Implemented <br /> modern design principles to enhance user engagement and optimize loading speeds.
           </spane>
+          <span>
+            <br /> <br />
+           <b style={{color: "#788097"}}> 2). FieldForce Website(Reactjs, Bootsrtap)</b> <br />
+
+           <b style={{color: "#788097"}}> 3). FieldForce Dashboard(Reactjs, MAterial UI, RESTful APIs)</b>
+          </span>
           
             <button className="button s-button">Hire Me</button>
           

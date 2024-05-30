@@ -4,7 +4,7 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from '../Card/Card';
-import Resume from '../../img/resume.pdf';
+import Resume from '../../img/Resume-Mohsin-Khan.pdf';
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion';
@@ -27,17 +27,17 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
- 
-        Expertise in ReactJS and NodeJS development.
-        <br />
-        Customized solutions for your web application needs.
-        <br />
-        Efficient and optimized code implementation/
-        <br />
-        Responsive and user-friendly UI/UX design
-          <br />
-          
+        <spane style={{display:"flex"}}>
+          <ol>HTML/CSS</ol>
+          <ol>BootStrap</ol>
+          <ol>JavaScript</ol>
+          <ol>Material UI</ol>
+        </spane>
+        <spane style={{display:"flex"}}>
+          <ol style={{color: "#788097"}}>React, Redux</ol>
+          <ol style={{color: "#788097"}}>Tailwind CSS</ol>
+          <ol style={{color: "#788097"}}>Github</ol>
+          <ol style={{color: "#788097"}}>RESTful APIs</ol>
         </spane>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
