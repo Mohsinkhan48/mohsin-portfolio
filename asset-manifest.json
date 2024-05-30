@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mohsin-portfolio/static/css/main.2181c1aa.css",
-    "main.js": "/mohsin-portfolio/static/js/main.fc602689.js",
+    "main.css": "/mohsin-portfolio/static/css/main.f16cb036.css",
+    "main.js": "/mohsin-portfolio/static/js/main.178de7c8.js",
     "static/js/787.1ed0c42c.chunk.js": "/mohsin-portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/ecommerce.png": "/mohsin-portfolio/static/media/ecommerce.fdeefa7b7b3195eaafae.png",
+    "static/media/desires-project.png": "/mohsin-portfolio/static/media/desires-project.0794617e5ae43869485f.png",
     "static/media/hoc.png": "/mohsin-portfolio/static/media/hoc.fa1dcd804e09cd482500.png",
-    "static/media/sidebar.jpeg": "/mohsin-portfolio/static/media/sidebar.78c05c30ea327c574b00.jpeg",
-    "static/media/musicapp.png": "/mohsin-portfolio/static/media/musicapp.f1c301f91904ef5f9249.png",
-    "static/media/resume.pdf": "/mohsin-portfolio/static/media/resume.4d3878eb5e694ba1e045.pdf",
+    "static/media/fieldforce-project.png": "/mohsin-portfolio/static/media/fieldforce-project.7ceb9f2d794c03b3ff3f.png",
+    "static/media/bigentities project.png": "/mohsin-portfolio/static/media/bigentities project.ebba9e88881eaff02eee.png",
     "static/media/boy.png": "/mohsin-portfolio/static/media/boy.5ca4b670a32b71681d2c.png",
+    "static/media/Resume-Mohsin-Khan.pdf": "/mohsin-portfolio/static/media/Resume-Mohsin-Khan.23a6a7aabd76f4a068df.pdf",
     "static/media/glassesimoji.png": "/mohsin-portfolio/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
     "static/media/thumbup.png": "/mohsin-portfolio/static/media/thumbup.e06790ba656f0397cbe5.png",
     "static/media/humble.png": "/mohsin-portfolio/static/media/humble.c8b32b53675e68978981.png",
@@ -18,12 +18,12 @@
     "static/media/Vector2.png": "/mohsin-portfolio/static/media/Vector2.28db5bfd58081dd1df1b.png",
     "static/media/glasses.png": "/mohsin-portfolio/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
     "index.html": "/mohsin-portfolio/index.html",
-    "main.2181c1aa.css.map": "/mohsin-portfolio/static/css/main.2181c1aa.css.map",
-    "main.fc602689.js.map": "/mohsin-portfolio/static/js/main.fc602689.js.map",
+    "main.f16cb036.css.map": "/mohsin-portfolio/static/css/main.f16cb036.css.map",
+    "main.178de7c8.js.map": "/mohsin-portfolio/static/js/main.178de7c8.js.map",
     "787.1ed0c42c.chunk.js.map": "/mohsin-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2181c1aa.css",
-    "static/js/main.fc602689.js"
+    "static/css/main.f16cb036.css",
+    "static/js/main.178de7c8.js"
   ]
 }
