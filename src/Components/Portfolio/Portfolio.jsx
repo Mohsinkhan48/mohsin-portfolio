@@ -23,9 +23,10 @@ function Portfolio() {
         grabCursor={true}
         className="portfolio-slider"
         >
+          <a href="https://github.com/Mohsinkhan48/Tic-Tac-Toe-Game-Reactjs">
     <SwiperSlide>
     <img src={Sidebar} alt=''/>
-    </SwiperSlide>
+    </SwiperSlide></a>
     <SwiperSlide>
     <img src={Ecommerce} alt=''/>
     </SwiperSlide>

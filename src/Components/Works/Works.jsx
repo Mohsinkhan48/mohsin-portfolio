@@ -18,28 +18,35 @@ function Works() {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+          PROFESSIONAL EXPERIENCE &
           </span>
-          <span>Brands & Clients</span>
+          <span>PROJECTS</span>
           <spane>
-          <b>I did work related to:</b>
+          {/* <b>I did work related to:</b> */}
           
             <br /> <br />
-           <b> 1). BigEntities Website</b>
+           <b> 1). FIELDFORCE APP</b> <br />
             <br />
-             Technologies: HTML, CSS, Bootstrap, JavaScript
-            <br />
-            <b>Project Description</b> <br />
-            Developed and maintained the company’s main website, <br /> ensuring a responsive and user-friendly interface. Implemented <br /> modern design principles to enhance user engagement and optimize loading speeds.
+             Technologies: HTML, CSS, Material UI, JavaScript, Reactjs & Redux
+            <br /><br />
+            <b>Project Description</b> <br /> <br />
+            he Field Force Dashboard is a dynamic web portal designed specifically for managing and <br />
+optimizing the workflow of medical representatives. The application features role-based <br /> access, where  permissions and 
+functionalities are tailored to different user roles. Admins <br /> have access to advanced features for task progress tracking, and 
+performance analysis, while <br /> medical representatives have access to features suited for managing their tasks and schedules. 
+            {/* Developed and maintained the company’s main website, <br /> ensuring a responsive and user-friendly interface. Implemented <br /> modern design principles to enhance user engagement and optimize loading speeds. */}
           </spane>
           <span>
             <br /> <br />
-           <b style={{color: "#788097"}}> 2). FieldForce Website(Reactjs, Bootsrtap)</b> <br />
+           <b style={{color: "#788097"}}> 2). E-commerce Website(Reactjs & Redux, RESTful APIs) </b> <br /> <br />
 
-           <b style={{color: "#788097"}}> 3). FieldForce Dashboard(Reactjs, MAterial UI, RESTful APIs)</b>
+           <b style={{color: "#788097"}}> 3). BigEntities website(HTML,CSS, JavaScript, Bootstrap)</b> <br /><br />
+           <b style={{color: "#788097"}}> 4). Tic-Tac-Toe Game(using UseStates, Props and State Management)</b>
+
           </span>
           
-            <button className="button s-button">Hire Me</button>
+         <a href="https://www.linkedin.com/in/mohsin-khan999/" target='-blank'> <button className="button s-button">Hire Me</button></a>  
+
           
           <div
             className="blur s-blur1"

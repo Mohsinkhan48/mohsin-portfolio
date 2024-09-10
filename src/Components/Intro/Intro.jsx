@@ -13,6 +13,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
 import { motion } from 'framer-motion';
+
 function Intro() {
 
   const transition ={duration:2, type: 'string'}
@@ -25,19 +26,22 @@ function Intro() {
     <div className='i-name'>
     <span style={{color: darkMode? 'white': ''}}>Hy! I Am</span>
     <span>Mohsin Khan</span>
-    <span>Mohsin is here,
-Experienced React.js developer with a strong understanding of state management and modern front-end tools. Committed to delivering high-quality code and staying up-to-date with the latest trends. And proficient in UI frameworks like Bootstrap and Tailwind CSS for crafting modern web experiences.
+    <span>Motivated and detail-oriented computer science student with two years of experience in React.js development, seeking a position as 
+a React.js developer. Eager to apply academic knowledge and hands-on project experience to real-world applications, leveraging 
+skills in React and REST frameworks.
+{/* Experienced React.js developer with a strong understanding of state management and modern front-end tools. Committed to delivering high-quality code and staying up-to-date with the latest trends. And proficient in UI frameworks like Bootstrap and Tailwind CSS for crafting modern web experiences. */}
 
-I currently work at BigEntities Company, where I play a key role in developing the company's online presence through website development.
+{/* I currently work at BigEntities Company, where I play a key role in developing the company's online presence through website development. */}
 
  </span>
     </div>
-    <button className='button i-button'>Hire me</button>
+    <a href="https://www.linkedin.com/in/mohsin-khan999/" target='_blank'><button className='button i-button' >Hire me</button></a>
+    
 
     <div className='i-icons'>
     {/* <img src={Github} alt=''/> */}
-    <a href="https://www.linkedin.com/in/mohsin-khan-706604217/" target="_blank"><img src={LinkedIn} alt=''/></a>
-   <a href="https://www.instagram.com/desi__lad/" target="_blank" > <img src={Instagram} alt=''/></a>
+    <a href="https://www.linkedin.com/in/mohsin-khan999/" target="_blank"><img src={LinkedIn} alt=''/></a>
+   <a href="#"> <img src={Instagram} alt=''/></a>
     </div>
     </div>
     <div className='i-right'>

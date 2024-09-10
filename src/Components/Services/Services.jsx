@@ -54,8 +54,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Redux"}
+            detail={"Redux is a state management library for JavaScript applications, often used with React."}
           />
         </motion.div>
         {/* second card */}
@@ -66,8 +66,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, Reactjs, Nodejs, Expressjs,MongoDB"}
+            heading={"Virtual DOM"}
+            detail={"Efficiently update and render only the components that change, improving performance."}
           />
         </motion.div>
         {/* 3rd */}
@@ -78,9 +78,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"React Router"}
             detail={
-              "Delivering high-quality design assets, including style guides, icons, illustrations, and graphics, for use across various platforms and devices."
+              "Implement dynamic routing and navigation in single-page applications (SPAs) with react-router-dom."
             }
             color="rgba(252, 166, 31, 0.45)"
           />
