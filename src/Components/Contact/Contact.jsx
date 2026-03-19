@@ -1,10 +1,9 @@
 import React, { useState, useRef, useContext } from "react";
 import "./Contact.css";
-import emailjs from '@emailjs/browser';
-import { themeContext } from '../../Context';
+import emailjs from "@emailjs/browser";
+import { themeContext } from "../../Context";
 
 const Contact = () => {
-
   const form = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
@@ -18,7 +17,7 @@ const Contact = () => {
     const name = nameRef.current.value.trim();
     const email = emailRef.current.value.trim();
     const message = messageRef.current.value.trim();
-    
+
     // Check if name is empty
     if (!name) {
       validationErrors.name = "Name is required";
@@ -50,11 +49,18 @@ const Contact = () => {
 
     alert("Email Sent Successfully");
 
-    emailjs.sendForm('service_9zmk06d', 'template_gdv75mi', form.current, 'KkVxvm6IJxPIiU6fw')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_9zmk06d",
+        "template_ktjp1cq",
+        form.current,
+        "KkVxvm6IJxPIiU6fw",
+      )
+      .then(
+        (result) => {
           console.log(result.text);
           setDone(true);
-          
+
           // Clear the form fields after submission
           nameRef.current.value = "";
           emailRef.current.value = "";
@@ -62,9 +68,11 @@ const Contact = () => {
 
           // Clear errors
           setErrors({});
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        },
+      );
   };
 
   const theme = useContext(themeContext);
@@ -76,7 +84,7 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span style={{ color: darkMode ? 'white' : '' }}>Get in Touch</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
           <div
             className="blur s-blur1"
@@ -87,28 +95,28 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input 
-            type="text" 
-            name="user_name" 
-            className="user" 
-            placeholder="Name" 
+          <input
+            type="text"
+            name="name"
+            className="user"
+            placeholder="Name"
             ref={nameRef} // Reference to the name input
           />
           {errors.name && <span className="error">{errors.name}</span>}
 
-          <input 
-            type="email" 
-            name="user_email" 
-            className="user" 
-            placeholder="Email" 
+          <input
+            type="email"
+            name="email"
+            className="user"
+            placeholder="Email"
             ref={emailRef} // Reference to the email input
           />
           {errors.email && <span className="error">{errors.email}</span>}
 
-          <textarea 
-            name="message" 
-            className="user" 
-            placeholder="Message" 
+          <textarea
+            name="message"
+            className="user"
+            placeholder="Message"
             ref={messageRef} // Reference to the message textarea
           />
           {errors.message && <span className="error">{errors.message}</span>}

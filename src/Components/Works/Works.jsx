@@ -1,91 +1,122 @@
-import React from 'react'
-import './Works.css';
+import React, { useContext } from "react";
+import "./Works.css";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
-import { useContext } from 'react';
-import { themeContext } from '../../Context';
-import { motion } from 'framer-motion';
+import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
+
 function Works() {
   const theme = useContext(themeContext);
-  const darkMode= theme.state.darkMode;
+  const darkMode = theme.state.darkMode;
+
+  // Framer Motion variants for left section
+  const leftVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
+
+  // Framer Motion variants for right circle logos
+  const circleVariants = {
+    hidden: { rotate: 45, opacity: 0 },
+    visible: {
+      rotate: 0,
+      opacity: 1,
+      transition: { duration: 3, type: "spring" },
+    },
+  };
+
   return (
     <div className="works" id="Works">
       {/* left side */}
-      <div className="w-left">
+      <motion.div
+        className="w-left"
+        variants={leftVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="awesome">
-          {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-          PROFESSIONAL EXPERIENCE &
+            PROFESSIONAL EXPERIENCE
           </span>
-          <span>PROJECTS</span>
-          <spane>
-          {/* <b>I did work related to:</b> */}
-          
-            <br /> <br />
-           <b> 1). FIELDFORCE APP</b> <br />
-            <br />
-             Technologies: HTML, CSS, Material UI, JavaScript, Reactjs & Redux
-            <br /><br />
-            <b>Project Description</b> <br /> <br />
-            he Field Force Dashboard is a dynamic web portal designed specifically for managing and <br />
-optimizing the workflow of medical representatives. The application features role-based <br /> access, where  permissions and 
-functionalities are tailored to different user roles. Admins <br /> have access to advanced features for task progress tracking, and 
-performance analysis, while <br /> medical representatives have access to features suited for managing their tasks and schedules. 
-            {/* Developed and maintained the company’s main website, <br /> ensuring a responsive and user-friendly interface. Implemented <br /> modern design principles to enhance user engagement and optimize loading speeds. */}
+          <span>Where I've Worked</span>
+          <spane
+            style={{
+              display: "block",
+              marginTop: "1rem",
+              lineHeight: "1.8rem",
+              color: darkMode ? "white" : "#555",
+            }}
+          >
+            <b>Big Entities Company</b> <br />
+            Junior Software Engineer | Nov 2024 – Aug 2025 <br />
+            Worked as a MERN Stack Developer focusing on:
+            <ul style={{ marginLeft: "1rem", marginTop: "0.5rem" }}>
+              <li>
+                Developing full-stack applications using React.js, Redux,
+                Node.js
+                <br /> Express, and MongoDB.
+              </li>
+              <li>
+                Building RESTful APIs and ensuring efficient database
+                management.
+              </li>
+              <li>
+                Implementing state management, authentication (JWT), and
+                responsive <br /> UI with Tailwind CSS and Bootstrap.
+              </li>
+              <li>
+                Maintaining code quality, debugging, and collaborating with team
+                members to deliver scalable solutions.
+              </li>
+            </ul>
           </spane>
-          <span>
-            <br /> <br />
-           <b style={{color: "#788097"}}> 2). E-commerce Website(Reactjs & Redux, RESTful APIs) </b> <br /> <br />
 
-           <b style={{color: "#788097"}}> 3). BigEntities website(HTML,CSS, JavaScript, Bootstrap)</b> <br /><br />
-           <b style={{color: "#788097"}}> 4). Tic-Tac-Toe Game(using UseStates, Props and State Management)</b>
+          <a href="https://www.linkedin.com/in/mohsin-khan999/" target="_blank">
+            <button className="button s-button">Hire Me</button>
+          </a>
 
-          </span>
-          
-         <a href="https://www.linkedin.com/in/mohsin-khan999/" target='-blank'> <button className="button s-button">Hire Me</button></a>  
-
-          
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
           ></div>
         </div>
+      </motion.div>
 
-        {/* right side */}
-      </div>
-      <div className="w-right">
-        <motion.div
-          initial={{ rotate: 45 }}
-          whileInView={{ rotate: 0 }}
-          viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
-          className="w-mainCircle"
-        >
+      {/* right side */}
+      <motion.div
+        className="w-right"
+        variants={circleVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <div className="w-mainCircle">
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Upwork} alt="Upwork" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Fiverr} alt="Fiverr" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
-          </div>{" "}
-          <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Amazon} alt="Amazon" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Shopify} alt="Shopify" />
           </div>
-        </motion.div>
-        {/* background Circles */}
+          <div className="w-secCircle">
+            <img src={Facebook} alt="Facebook" />
+          </div>
+        </div>
+
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
-      </div>
+      </motion.div>
     </div>
   );
-};
+}
 
 export default Works;

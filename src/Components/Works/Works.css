@@ -1,99 +1,258 @@
-.works{
-    padding: 0 3rem 0 3rem;
+.works {
+    padding: 0 3rem;
     display: flex;
-    height: 90vh;
-    margin-top: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 120vh;
+    /* margin-top: 4rem; */
+    flex-wrap: wrap;
 }
-.w-right{
+
+.w-left {
+    flex: 1;
+    min-width: 280px;
+}
+
+.w-right {
     position: relative;
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.w-mainCircle{
-    left: 9rem;
+
+.w-mainCircle {
     position: relative;
     width: 18rem;
     height: 18rem;
-    border-radius: 100%;
+    border-radius: 50%;
     box-shadow: var(--smboxShadow);
-    top: 2rem;
     background: white;
 }
-.w-mainCircle>*{
+
+.w-mainCircle>* {
     position: absolute;
 }
-.w-mainCircle>:nth-child(1){
+
+.w-mainCircle> :nth-child(1) {
     top: -3rem;
     left: 6rem;
 }
-.w-mainCircle>:nth-child(2){
+
+.w-mainCircle> :nth-child(2) {
     top: 5rem;
     left: -3rem;
 }
-.w-mainCircle>:nth-child(3){
+
+.w-mainCircle> :nth-child(3) {
     top: 5rem;
     left: 6rem;
 }
-.w-mainCircle>:nth-child(4){
+
+.w-mainCircle> :nth-child(4) {
     top: 5rem;
     left: 15rem;
 }
-.w-mainCircle>:nth-child(5){
+
+.w-mainCircle> :nth-child(5) {
     top: 13rem;
     left: 6rem;
 }
-.w-secCircle{
+
+.w-secCircle {
     width: 6rem;
     height: 6rem;
     position: absolute;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 5px solid #ebebeb;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: none;
-    box-shadow: var(--smboxShadow);
     background: white;
+    box-shadow: var(--smboxShadow);
 }
-.w-secCircle>img{
+
+.w-secCircle>img {
     transform: scale(0.6);
 }
-.w-backCircle{
+
+.w-backCircle {
     position: absolute;
     height: 13rem;
     width: 13rem;
-    border-radius: 100%;
+    border-radius: 50%;
     z-index: -1;
 }
-.blueCircle{
+
+.blueCircle {
     background: #194988;
     left: 18rem;
     top: 0rem;
 }
-.yellowCircle{
+
+.yellowCircle {
     background: #F5c32C;
     left: 18rem;
     top: 8rem;
 }
+
+/* Responsive for tablets */
+@media screen and (max-width: 1024px) {
+    .works {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .w-mainCircle {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .w-mainCircle> :nth-child(1) {
+        top: -2rem;
+        left: 5rem;
+    }
+
+    .w-mainCircle> :nth-child(2) {
+        top: 4rem;
+        left: -2rem;
+    }
+
+    .w-mainCircle> :nth-child(3) {
+        top: 4rem;
+        left: 5rem;
+    }
+
+    .w-mainCircle> :nth-child(4) {
+        top: 4rem;
+        left: 14rem;
+    }
+
+    .w-mainCircle> :nth-child(5) {
+        top: 12rem;
+        left: 5rem;
+    }
+
+    .w-backCircle {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+    .works {
+        flex-direction: column;
+        height: auto;
+        gap: 4rem;
+        padding: 1rem;
+    }
+
+    .w-left {
+        text-align: center;
+    }
+
+    .w-left span,
+    .w-left spane {
+        font-size: 0.9rem;
+    }
+
+    .w-mainCircle {
+        width: 14rem;
+        height: 14rem;
+        top: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .w-mainCircle> :nth-child(1) {
+        top: -1.5rem;
+        left: 4rem;
+    }
+
+    .w-mainCircle> :nth-child(2) {
+        top: 3rem;
+        left: -1rem;
+    }
+
+    .w-mainCircle> :nth-child(3) {
+        top: 3rem;
+        left: 4rem;
+    }
+
+    .w-mainCircle> :nth-child(4) {
+        top: 3rem;
+        left: 12rem;
+    }
+
+    .w-mainCircle> :nth-child(5) {
+        top: 10rem;
+        left: 4rem;
+    }
+
+    .w-backCircle {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+/* Responsive for very small mobile */
 @media screen and (max-width: 480px) {
     .works {
-      flex-direction: column;
-      height: 55rem;
-      padding: 0;
-      gap: 5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 5rem;
+        padding: 0.5rem;
     }
-  
-    .w-right {
-      display: flex;
-      align-items: flex-start;
-      
-      transform: scale(0.7);
-    }
-    .w-mainCircle{
-      position: static;
-    }
-    .w-backCircle{
-      left: 8rem!important;
-    }
-  
-  }
-  
 
+    .w-left span {
+        font-size: 0.85rem;
+    }
+
+    .w-left spane {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .w-mainCircle {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .w-mainCircle> :nth-child(1) {
+        top: -1rem;
+        left: 3rem;
+    }
+
+    .w-mainCircle> :nth-child(2) {
+        top: 2.5rem;
+        left: -1rem;
+    }
+
+    .w-mainCircle> :nth-child(3) {
+        top: 2.5rem;
+        left: 3rem;
+    }
+
+    .w-mainCircle> :nth-child(4) {
+        top: 2.5rem;
+        left: 10rem;
+    }
+
+    .w-mainCircle> :nth-child(5) {
+        top: 9rem;
+        left: 3rem;
+    }
+
+    .w-backCircle {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .w-right {
+        transform: scale(0.6);
+    }
+}

@@ -1,56 +1,159 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
+.contact-form {
+    padding: 3rem;
     display: flex;
-    height: 80vh;
+    flex-wrap: wrap;
+    /* allows stacking on small screens */
+    gap: 3rem;
     margin-top: 4rem;
-      /* scroll */
-  padding-top: 3rem;
+    min-height: 80vh;
 }
 
-.c-right{
-    display: flex;
-    justify-content: center;
-    position: relative;
+/* Left side */
+.w-left {
     flex: 1;
-}
-
-.c-right>form
-{
+    min-width: 250px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    
+    justify-content: center;
 }
 
-.c-right .user{
-    width: 20rem;
-    height: 2rem;
-    padding: 0.3em;
-    outline: none;
+/* Headings */
+.awesome span:nth-of-type(1) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.awesome span:nth-of-type(2) {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0 2rem 0;
+}
+
+/* Right side form */
+.c-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.c-right>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input and textarea */
+.c-right .user,
+.c-right textarea {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
     border: 2px solid var(--orange);
     border-radius: 8px;
-    font-size: 16px;   
+    outline: none;
+    transition: 0.3s;
 }
 
-textarea{
-    height: 4rem!important;
+.c-right .user:focus,
+.c-right textarea:focus {
+    border-color: var(--purple);
 }
 
-.c-blur1{
-    top: 1rem;
+textarea {
+    height: 6rem;
+    /* larger and responsive */
+    resize: vertical;
+}
+
+/* Submit button */
+.c-right .button {
+    padding: 0.7rem 1.2rem;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.c-right .button:hover {
+    background-color: var(--purple);
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 0.85rem;
+    align-self: flex-start;
+}
+
+/* Blur decoration */
+.c-blur1 {
+    position: absolute;
+    top: -1rem;
     left: 8rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .contact-form {
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1.5rem;
+    }
+
+    .c-right>form {
+        max-width: 100%;
+    }
+
+    .c-blur1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .contact-form{
-        padding: 0;
-        flex-direction: column;
-        gap: 5rem;
-        height: 40rem;
-    }
-    .c-right .user{
-        width: 16rem;
+    .contact-form {
+        padding: 1rem;
+        gap: 2rem;
     }
 
-}   
+    .c-right .user,
+    .c-right textarea {
+        font-size: 0.95rem;
+        padding: 0.6rem;
+    }
+
+    .c-right .button {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .awesome span:nth-of-type(1) {
+        font-size: 1.5rem;
+    }
+
+    .awesome span:nth-of-type(2) {
+        font-size: 2rem;
+    }
+}
